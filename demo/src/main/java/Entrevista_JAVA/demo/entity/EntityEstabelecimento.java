@@ -27,6 +27,7 @@ public class EntityEstabelecimento {
     private String cnpj;
 
     @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
     private EnumTipoESTABELECIMENTO tipoEstabelecimento;
 
     @OneToMany(mappedBy = "estabelecimentoRequerente")

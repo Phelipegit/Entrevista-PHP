@@ -1,4 +1,4 @@
-package Entrevista_JAVA.demo.service;
+package Entrevista_JAVA.demo.service.serviceEstabelecimento;
 
 import Entrevista_JAVA.demo.entity.EntityEstabelecimento;
 import Entrevista_JAVA.demo.model.CadastrarEstabelecimentoRequest;
@@ -25,7 +25,8 @@ public class CadastrarEstabelecimento {
 
         EntityEstabelecimento estabelecimento = new EntityEstabelecimento(estabelecimentoRequest.getNome(),
                 estabelecimentoRequest.getCnpj(),
-                estabelecimentoRequest.getTipoEstabelecimento(),estabelecimentoRequest.getTempoMaximoEmprestimo());
+                estabelecimentoRequest.getTipoEstabelecimento(),
+                estabelecimentoRequest.getTempoMaximoEmprestimo());
 
         repositoryEstabelecimento.save(estabelecimento);
     }

@@ -1,4 +1,4 @@
-package Entrevista_JAVA.demo.service;
+package Entrevista_JAVA.demo.service.servicePatrimonio;
 
 import Entrevista_JAVA.demo.entity.EntityEstabelecimento;
 import Entrevista_JAVA.demo.entity.EntityPatrimonio;

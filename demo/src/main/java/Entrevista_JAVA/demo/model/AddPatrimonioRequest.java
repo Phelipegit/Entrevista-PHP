@@ -2,10 +2,8 @@ package Entrevista_JAVA.demo.model;
 
 import Entrevista_JAVA.demo.EnumTipoPATRIMONIO;
 import lombok.Getter;
-import org.hibernate.validator.constraints.br.CNPJ;
 
 import java.time.LocalDate;
-import java.util.UUID;
 
 @Getter
 public class AddPatrimonioRequest {
@@ -22,7 +20,11 @@ public class AddPatrimonioRequest {
 
     private LocalDate dataEntrada;
 
-    public AddPatrimonioRequest(String cnpj, String nome, Integer codigo, EnumTipoPATRIMONIO enumTipo, LocalDate dataEntrada) {
+    public AddPatrimonioRequest(String cnpj,
+                                String nome,
+                                Integer codigo,
+                                EnumTipoPATRIMONIO enumTipo,
+                                LocalDate dataEntrada) {
         this.cnpj = cnpj;
         this.nome = nome;
         this.codigo = codigo;

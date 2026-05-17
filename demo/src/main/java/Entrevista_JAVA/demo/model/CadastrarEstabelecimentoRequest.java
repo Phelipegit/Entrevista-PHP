@@ -22,4 +22,8 @@ public class CadastrarEstabelecimentoRequest {
         this.tipoEstabelecimento = tipoEstabelecimento;
         this.tempoMaximoEmprestimo = tempoMaximoEmprestimo;
     }
+
+    public CadastrarEstabelecimentoRequest() {
+
+    }
 }
