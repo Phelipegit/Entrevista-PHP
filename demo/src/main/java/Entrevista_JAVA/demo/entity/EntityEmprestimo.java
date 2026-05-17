@@ -1,6 +1,7 @@
 package Entrevista_JAVA.demo.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.UUID;
 Entidade empréstimo
  */
 @Entity
+@Getter
 public class EntityEmprestimo {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)

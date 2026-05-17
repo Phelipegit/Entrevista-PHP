@@ -1,5 +1,8 @@
 package Entrevista_JAVA.demo;
 
+import lombok.Getter;
+
+@Getter
 public enum EnumTipo {
     PROPRIO("Próprio"),ALUGADO("Alugado"),EMPRESTADO("Emprestado");
 
@@ -7,9 +10,5 @@ public enum EnumTipo {
 
     EnumTipo(String nome) {
         this.nome = nome;
-    }
-
-    public String getNome() {
-        return this.nome;
     }
 }
