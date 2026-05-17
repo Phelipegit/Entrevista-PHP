@@ -32,6 +32,11 @@ public class EntityPatrimonio {
         this.dataEntrada = dataEntrada;
     }
 
+    public EntityPatrimonio(LocalDate dataBaixa,String motivoBaixa) {
+        this.dataBaixa = dataBaixa;
+        this.motivoBaixa = motivoBaixa;
+    }
+
     public EntityPatrimonio() {
 
     }
